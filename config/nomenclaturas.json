@@ -1,0 +1,32 @@
+{
+    "produtos": {
+        "NP": {"nome": "new piccolo", "tensao": "média"},
+        "CT": {"nome": "cubículo de transformador", "tensao": "média"},
+        "SI": {"nome": "simplificada", "tensao": "média"}
+    },
+    "familias": {
+        "BA": "base",
+        "BT": "batente",
+        "CX": "caixa",
+        "CH": "chapéu",
+        "CL": "coluna",
+        "FE": "fechamento",
+        "PE": "porta",
+        "RE": "reforço",
+        "SU": "suporte",
+        "TL": "telhado"
+    },
+    "bitolas": {
+        "B": "14",
+        "C": "16"
+    },
+    "materiais": {
+        "B": "ZC",
+        "C": "PP"
+    },
+    "tipos": {
+        "P": "peça",
+        "S": "submontagem",
+        "M": "montagem"
+    }
+}

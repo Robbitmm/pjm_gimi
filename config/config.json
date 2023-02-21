@@ -1,0 +1,5 @@
+{
+    "CAMINHO_PADRAO": "C:/Users/dudum/OneDrive/Área de Trabalho/Outros/Programação/Python/Automation/Gimi/PRODUTO/PADRONIZADO",
+    "CAMINHO_PROCESSO": "C:/Users/dudum/OneDrive/Área de Trabalho/Outros/Programação/Python/Automation/Gimi/PROCESSO",
+    "procurar_extensoes": ["dft", "txt"]
+}
