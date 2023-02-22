@@ -1,22 +1,18 @@
 from modulos.docMerger import *
 import customtkinter, tkinter.messagebox
 
-def caller():
-    merger = docManager()
-    merger.merger(entry_path.get())
-    tkinter.messagebox.showinfo("Concluído", "Documento criado")
+class Merger_gui:
+    def caller(self):
+        merger = docManager()
+        merger.merger(self.gui.entry_path.get())
+        tkinter.messagebox.showinfo("Concluído", "Documento criado")
 
-customtkinter.set_appearance_mode('dark')
-customtkinter.set_default_color_theme('green')
+    def gui(self, root):
+        entry_path = customtkinter.CTkEntry(master=root, placeholder_text="Digite o caminho dos arquivos")
+        entry_path.pack(padx=20)
 
-root = customtkinter.CTk()
-root.geometry("500x300")
-root.title("Word Merger")
+        button = customtkinter.CTkButton(master=root, text="Juntar", command=self.caller)
+        button.pack(padx=20, pady=20)
 
-entry_path = customtkinter.CTkEntry(master=root, placeholder_text="Digite o caminho dos arquivos")
-entry_path.pack()
-
-button = customtkinter.CTkButton(master=root, text="Juntar", command=caller)
-button.pack()
-
-root.mainloop()
+if __name__ == "__main__":
+    Merger_gui()
